@@ -1,7 +1,7 @@
 apiVersion: apps/v1
 kind: Deployment
 metadata:
-  name: webserver-nginx
+  name: nginx-test-app
   namespace: nginx-test
   labels:
     app: nginx-test-app
