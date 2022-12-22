@@ -16,7 +16,7 @@ spec:
         app: nginx-test-app
     spec:
       containers:
-      - name: webserver-nginx
+      - name: nginx-test-app
         image: zioposty/test-nginx:1.0
         imagePullPolicy: IfNotPresent
         resources:
