@@ -1,7 +1,7 @@
 apiVersion: apps/v1
 kind: Deployment
 metadata:
-  name: nginx-test-app
+  name: webserver-nginx
   namespace: nginx-test
   labels:
     app: nginx-test-app
@@ -28,10 +28,3 @@ spec:
             memory: 200Mi
         ports:
         - containerPort: 8080
-        livenessProbe:
-          httpGet:
-            path: /actuator/health
-            port: 8080
-          initialDelaySeconds: 5
-          periodSeconds: 10
-          failureThreshold: 2
