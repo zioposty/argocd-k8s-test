@@ -4,7 +4,7 @@ metadata:
   labels:
     app: nginx-test-app
   name: nginx-test-service
-  namespace: resource-test
+  namespace: argo-roles-test
 spec:
   selector:
     app: nginx-test-app
