@@ -2,11 +2,11 @@ apiVersion: apps/v1
 kind: Deployment
 metadata:
   name: nginx-test-app
-  namespace: nginx-test
+  namespace: lpostiglione-project
   labels:
     app: nginx-test-app
 spec:
-  replicas: 3
+  replicas: 1
   selector:
     matchLabels:
       app: nginx-test-app
