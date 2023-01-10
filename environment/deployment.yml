@@ -2,7 +2,7 @@ apiVersion: apps/v1
 kind: Deployment
 metadata:
   name: nginx-test-app
-  namespace: argo-roles-test
+  namespace: default
   labels:
     app: nginx-test-app
 spec:
